@@ -1,0 +1,12 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Application\\": "Application/",
+            "Domain\\": "Domain/",
+            "Infrastructure\\": "Infrastructure/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}
