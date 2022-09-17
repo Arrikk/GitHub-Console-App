@@ -19,9 +19,11 @@ class Helpers
         return trim($input);
     }
 
-    public static function console($message)
+    public static function console($message, $exit = true)
     {
+        if($exit)
         exit(fwrite(STDOUT, $message));
+        return fwrite(STDOUT, $message);
     }
 
     public static function format($command)

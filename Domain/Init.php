@@ -20,7 +20,7 @@ class Init extends Controller
 
     public function run()
     {
-        fwrite(STDOUT, "@Github Repository Manager (Input Command) $~: ");
+        Helpers::console("@Github Repository Manager (Input Command) $~: ", false);
         $command = Helpers::write();
 
         # format command
